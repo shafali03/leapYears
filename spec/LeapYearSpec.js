@@ -14,4 +14,9 @@ describe('Leap', function() {
     leap = new Leap();
     expect(leap.leapYears(2020)).toBe(true)
   })
+
+  it('it is a leap year 2009', function() {
+    leap = new Leap();
+    expect(leap.leapYears(2009)).toBe(false)
+  })
 })
