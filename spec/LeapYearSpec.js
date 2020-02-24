@@ -5,3 +5,13 @@
 // All years divisible by 4 and not by 100 ARE leap years (e.g. 2004, 2008 and 2012 were leap years)
 // All years not divisible by 4 are NOT leap years (e.g. 2009, 2010 and 2011 were not leap years)
 // Example output
+
+
+describe('Leap', function() {
+  var leap
+
+  it('it is a leap year 2020', function() {
+    leap = new Leap();
+    expect(leap.leapYears(2020)).toBe(true)
+  })
+})
