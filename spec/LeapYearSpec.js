@@ -30,11 +30,19 @@ describe('Leap', function() {
     expect(leap.leapYears(2011)).toBe(false)
   })
 
-
+  it('it is a leap year 2009', function() {
+    leap = new Leap();
+    expect(leap.leapYears(2009)).toBe(false)
+  })
 
   it('it is a leap year 1700', function() {
     leap = new Leap();
     expect(leap.leapYears(1700)).toBe(false)
+  })
+
+  it('it is a leap year 2000', function() {
+    leap = new Leap();
+    expect(leap.leapYears(2000)).toBe(true)
   })
 
 })
