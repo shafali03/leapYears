@@ -25,9 +25,16 @@ describe('Leap', function() {
     expect(leap.leapYears(2012)).toBe(true)
   })
 
-  it('it is a leap year 2008', function() {
+  it('it is a leap year 2011', function() {
     leap = new Leap();
-    expect(leap.leapYears(2008)).toBe(true)
+    expect(leap.leapYears(2011)).toBe(false)
+  })
+
+
+
+  it('it is a leap year 1700', function() {
+    leap = new Leap();
+    expect(leap.leapYears(1700)).toBe(false)
   })
 
 })
